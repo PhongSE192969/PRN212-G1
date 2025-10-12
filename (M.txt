@@ -1,0 +1,12 @@
+| Ngân hàng              | acqId (Mã ngân hàng trong VietQR) |
+| ---------------------- | --------------------------------- |
+| Vietcombank            | **970436**                        |
+| Techcombank            | 970407                            |
+| MB Bank                | 970422                            |
+| BIDV                   | 970418                            |
+| ACB                    | 970416                            |
+| VPBank                 | 970432                            |
+| TPBank                 | 970423                            |
+| Agribank               | 970405                            |
+| Vietinbank             | 970415                            |
+| Bản Việt (VietCapital) | 970454                            |
