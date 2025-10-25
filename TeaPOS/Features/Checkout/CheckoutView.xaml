@@ -1,0 +1,107 @@
+﻿<Window x:Class="TeaPOS.Presentation.Wpf.Features.Checkout.CheckoutView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tính tiền" Height="560" Width="900">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Tiêu đề nhỏ -->
+        <TextBlock Grid.Row="0" Text="TÍNH TIỀN" FontSize="18" FontWeight="Bold"
+             Foreground="{StaticResource Chk.Text}" Margin="0,0,0,8"/>
+
+        <!-- GIỎ HÀNG -->
+        <Border Grid.Row="1" Style="{StaticResource Chk.Card}">
+            <DataGrid ItemsSource="{Binding Items}" Style="{StaticResource Chk.Grid}" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Món" Binding="{Binding ProductName}" Width="2*"/>
+                    <DataGridTextColumn Header="SL"  Binding="{Binding Quantity}"     Width="60"/>
+                    <DataGridTextColumn Header="Đơn giá"
+            Binding="{Binding UnitPrice, StringFormat={}{0:N0} đ}" Width="*"/>
+                    <DataGridTextColumn Header="Topping"
+            Binding="{Binding ToppingName}" Width="1.5*"/>
+                    <DataGridTextColumn Header="Tạm tính"
+            Binding="{Binding LineSubtotal, StringFormat={}{0:N0} đ}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+        <!-- KHU MÃ GIẢM + TỔNG TIỀN -->
+        <Border Grid.Row="2" Style="{StaticResource Chk.Card}" Margin="0,10,0,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Mã giảm giá -->
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Mã khuyến mãi" Foreground="{StaticResource Chk.Muted}" />
+                    <StackPanel Orientation="Horizontal" Margin="0,6,0,0">
+                        <TextBox Style="{StaticResource Chk.Input}" Width="160"
+                   Text="{Binding DiscountCodeInput, UpdateSourceTrigger=PropertyChanged}"/>
+                        <Button Content="Áp dụng" Style="{StaticResource Chk.Btn}" Margin="8,0,0,0"
+                  Click="ApplyDiscount_Click"/>
+                    </StackPanel>
+                    <TextBlock Text="{Binding AppliedDiscountText}"
+                   Foreground="{StaticResource Chk.Muted}" FontSize="12" Margin="0,4,0,0"/>
+                </StackPanel>
+
+                <!-- Bảng tổng -->
+                <StackPanel Grid.Column="1" Margin="16,0,0,0">
+                    <Grid Margin="0,0,0,6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Tạm tính" Foreground="{StaticResource Chk.Muted}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding Totals.Subtotal, StringFormat={}{0:N0} đ}"
+                     HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Grid Margin="0,0,0,6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="VAT (10%)" Foreground="{StaticResource Chk.Muted}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding Totals.VatAmount, StringFormat={}{0:N0} đ}"
+                     HorizontalAlignment="Right"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Giảm giá" Foreground="{StaticResource Chk.Muted}"/>
+                        <TextBlock Grid.Column="1" Text="{Binding Totals.DiscountAmount, StringFormat={}{0:N0} đ}"
+                     HorizontalAlignment="Right"/>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Tổng thanh toán + nút -->
+                <StackPanel Grid.Column="2" HorizontalAlignment="Right">
+                    <Border Padding="10,6" CornerRadius="10"
+                BorderBrush="{StaticResource Chk.Primary}" BorderThickness="2" Margin="0,0,0,8">
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="TỔNG:" FontWeight="Bold" Margin="0,0,10,0"/>
+                            <TextBlock Text="{Binding Totals.GrandTotal, StringFormat={}{0:N0} đ}"
+                       FontWeight="Bold" Foreground="{StaticResource Chk.Primary}" FontSize="18"/>
+                        </StackPanel>
+                    </Border>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Thanh toán (QR)" Style="{StaticResource Chk.BtnSuccess}" Width="140"
+                  Click="OpenPaymentQr_Click"/>
+                        <Button Content="In hoá đơn" Style="{StaticResource Chk.Btn}" Margin="8,0,0,0" Width="110"
+                  Click="OpenPrint_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+
+</Window>
