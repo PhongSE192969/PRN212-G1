@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|d:\\filecrack\\prn212-g1-phong\\bubbleteaapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|solutionrelative:loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|d:\\filecrack\\prn212-g1-phong\\bubbleteaapp\\quickstart.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|solutionrelative:quickstart.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|d:\\filecrack\\prn212-g1-phong\\bubbleteaapp\\data\\bubbleteadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|solutionrelative:data\\bubbleteadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|d:\\filecrack\\prn212-g1-phong\\bubbleteaapp\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|solutionrelative:loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|d:\\filecrack\\prn212-g1-phong\\bubbleteaapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|d:\\filecrack\\prn212-g1-phong\\bubbleteaapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|d:\\filecrack\\prn212-g1-phong\\bubbleteaapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|d:\\filecrack\\prn212-g1-phong\\bubbleteaapp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B187BCD8-3AE2-2A8C-216E-D6BD6CB3491E}|BubbleTeaApp.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LoginWindow.xaml.cs",
+              "ToolTip": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T14:49:01.726Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T14:44:00.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "LoginWindow.xaml",
+              "ToolTip": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\LoginWindow.xaml",
+              "RelativeToolTip": "LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T14:32:43.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BubbleTeaDbContext.cs",
+              "DocumentMoniker": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\Data\\BubbleTeaDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\BubbleTeaDbContext.cs",
+              "ToolTip": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\Data\\BubbleTeaDbContext.cs",
+              "RelativeToolTip": "Data\\BubbleTeaDbContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T14:29:28.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QUICKSTART.md",
+              "DocumentMoniker": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\QUICKSTART.md",
+              "RelativeDocumentMoniker": "QUICKSTART.md",
+              "ToolTip": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\QUICKSTART.md",
+              "RelativeToolTip": "QUICKSTART.md",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-10-26T14:28:48.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
+              "ToolTip": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T14:28:34.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T14:26:00.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\filecrack\\PRN212-G1-Phong\\BubbleTeaApp\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T14:25:49.225Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
