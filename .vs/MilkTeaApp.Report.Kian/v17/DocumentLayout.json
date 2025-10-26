@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{47393398-200D-43A6-A6CA-9AFAD0A8AB63}|MilkTeaApp.Report.Kian\\MilkTeaApp.Report.Kian.csproj|d:\\ki 5\\prn212\\milktea\\prn212-g1\\milkteaapp.report.kian\\revenuechartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{47393398-200D-43A6-A6CA-9AFAD0A8AB63}|MilkTeaApp.Report.Kian\\MilkTeaApp.Report.Kian.csproj|solutionrelative:milkteaapp.report.kian\\revenuechartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47393398-200D-43A6-A6CA-9AFAD0A8AB63}|MilkTeaApp.Report.Kian\\MilkTeaApp.Report.Kian.csproj|d:\\ki 5\\prn212\\milktea\\prn212-g1\\milkteaapp.report.kian\\revenuechartwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47393398-200D-43A6-A6CA-9AFAD0A8AB63}|MilkTeaApp.Report.Kian\\MilkTeaApp.Report.Kian.csproj|solutionrelative:milkteaapp.report.kian\\revenuechartwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47393398-200D-43A6-A6CA-9AFAD0A8AB63}|MilkTeaApp.Report.Kian\\MilkTeaApp.Report.Kian.csproj|d:\\ki 5\\prn212\\milktea\\prn212-g1\\milkteaapp.report.kian\\revenuereportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47393398-200D-43A6-A6CA-9AFAD0A8AB63}|MilkTeaApp.Report.Kian\\MilkTeaApp.Report.Kian.csproj|solutionrelative:milkteaapp.report.kian\\revenuereportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 258,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RevenueChartWindow.xaml",
+              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.Report.Kian\\RevenueChartWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTeaApp.Report.Kian\\RevenueChartWindow.xaml",
+              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.Report.Kian\\RevenueChartWindow.xaml",
+              "RelativeToolTip": "MilkTeaApp.Report.Kian\\RevenueChartWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T03:26:33.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RevenueChartWindow.xaml.cs",
+              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.Report.Kian\\RevenueChartWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MilkTeaApp.Report.Kian\\RevenueChartWindow.xaml.cs",
+              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.Report.Kian\\RevenueChartWindow.xaml.cs",
+              "RelativeToolTip": "MilkTeaApp.Report.Kian\\RevenueChartWindow.xaml.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAADwv2IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:21:39.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RevenueReportWindow.xaml.cs",
+              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.Report.Kian\\RevenueReportWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MilkTeaApp.Report.Kian\\RevenueReportWindow.xaml.cs",
+              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.Report.Kian\\RevenueReportWindow.xaml.cs",
+              "RelativeToolTip": "MilkTeaApp.Report.Kian\\RevenueReportWindow.xaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwFoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T03:20:50.51Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KI 5\\PRN212\\MilkTea\\MilkTeaApp.Report.Kian\\MilkTeaApp.DAL\\MilkTeaApp.DAL.csproj": {}
+    "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.DAL\\MilkTeaApp.DAL.csproj": {}
   },
   "projects": {
-    "D:\\KI 5\\PRN212\\MilkTea\\MilkTeaApp.Report.Kian\\MilkTeaApp.DAL\\MilkTeaApp.DAL.csproj": {
+    "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.DAL\\MilkTeaApp.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KI 5\\PRN212\\MilkTea\\MilkTeaApp.Report.Kian\\MilkTeaApp.DAL\\MilkTeaApp.DAL.csproj",
+        "projectUniqueName": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.DAL\\MilkTeaApp.DAL.csproj",
         "projectName": "MilkTeaApp.DAL",
-        "projectPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTeaApp.Report.Kian\\MilkTeaApp.DAL\\MilkTeaApp.DAL.csproj",
+        "projectPath": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.DAL\\MilkTeaApp.DAL.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTeaApp.Report.Kian\\MilkTeaApp.DAL\\obj\\",
+        "outputPath": "D:\\KI 5\\PRN212\\MilkTea\\PRN212-G1\\MilkTeaApp.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

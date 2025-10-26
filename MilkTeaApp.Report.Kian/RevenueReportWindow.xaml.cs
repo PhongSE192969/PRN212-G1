@@ -83,5 +83,12 @@ namespace MilkTeaApp.Report.Kian
                 txtStatus.Foreground = System.Windows.Media.Brushes.Red;
             }
         }
+        // 🔹 Mở biểu đồ doanh thu theo tháng
+        private void btnChart_Click(object sender, RoutedEventArgs e)
+        {
+            var chartWindow = new RevenueChartWindow();
+            chartWindow.ShowDialog();
+        }
+
     }
 }

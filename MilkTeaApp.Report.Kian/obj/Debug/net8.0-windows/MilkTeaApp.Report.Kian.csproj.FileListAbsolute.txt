@@ -1,0 +1,7 @@
+D:\KI 5\PRN212\MilkTea\PRN212-G1\MilkTeaApp.Report.Kian\obj\Debug\net8.0-windows\MilkTeaApp.Report.Kian.csproj.AssemblyReference.cache
+D:\KI 5\PRN212\MilkTea\PRN212-G1\MilkTeaApp.Report.Kian\obj\Debug\net8.0-windows\MainWindow.baml
+D:\KI 5\PRN212\MilkTea\PRN212-G1\MilkTeaApp.Report.Kian\obj\Debug\net8.0-windows\RevenueReportWindow.baml
+D:\KI 5\PRN212\MilkTea\PRN212-G1\MilkTeaApp.Report.Kian\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\KI 5\PRN212\MilkTea\PRN212-G1\MilkTeaApp.Report.Kian\obj\Debug\net8.0-windows\RevenueReportWindow.g.cs
+D:\KI 5\PRN212\MilkTea\PRN212-G1\MilkTeaApp.Report.Kian\obj\Debug\net8.0-windows\App.g.cs
+D:\KI 5\PRN212\MilkTea\PRN212-G1\MilkTeaApp.Report.Kian\obj\Debug\net8.0-windows\MilkTeaApp.Report.Kian_MarkupCompile.cache
