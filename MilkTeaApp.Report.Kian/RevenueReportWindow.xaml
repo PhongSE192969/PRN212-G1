@@ -1,0 +1,64 @@
+﻿<Window x:Class="MilkTeaApp.Report.Kian.RevenueReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Báo cáo Doanh thu"
+        Height="480" Width="720"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFF9F6F2">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- 🔹 Nút cập nhật -->
+        <Button x:Name="btnUpdate"
+                Content="🔄 Cập nhật doanh thu hôm nay"
+                Width="250" Height="45"
+                HorizontalAlignment="Left"
+                Margin="0,0,0,10"
+                Background="#8D6E63"
+                Foreground="White"
+                FontWeight="Bold"
+                BorderThickness="0"
+                Cursor="Hand"
+                Click="btnUpdate_Click"/>
+
+        <!-- 🔹 DataGrid hiển thị doanh thu -->
+        <Border Grid.Row="1"
+                Background="White"
+                BorderBrush="#D7CCC8"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="8" ShadowDepth="2" Direction="270" Opacity="0.25"/>
+            </Border.Effect>
+
+            <DataGrid x:Name="dgRevenue"
+                      AutoGenerateColumns="True"
+                      IsReadOnly="True"
+                      AlternatingRowBackground="#FFF3E5F5"
+                      GridLinesVisibility="None"
+                      RowHeight="32"
+                      FontSize="14"
+                      SelectionMode="Single"
+                      HeadersVisibility="Column"
+                      BorderThickness="0"
+                      HorizontalGridLinesBrush="#E0E0E0"
+                      VerticalGridLinesBrush="#E0E0E0"
+                      CanUserAddRows="False"/>
+        </Border>
+
+        <!-- 🔹 Text trạng thái -->
+        <TextBlock x:Name="txtStatus"
+                   Grid.Row="2"
+                   Text="Trạng thái: ..."
+                   Margin="0,10,0,0"
+                   FontWeight="Bold"
+                   Foreground="#5D4037"
+                   FontSize="14"/>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="MilkTeaApp.Report.Kian.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Báo cáo Doanh thu Trà Sữa" Height="500" Width="800">
+
+    <Grid Background="#FFF9F6F2" Margin="20">
+
+        <TextBlock Text="📊 Báo cáo doanh thu"
+                   FontSize="26" FontWeight="Bold"
+                   Foreground="#4E342E"
+                   Margin="0,0,0,15"/>
+
+        <Button x:Name="btnOpenReport"
+                Content="🧾 Mở báo cáo doanh thu"
+                Width="220" Height="45"
+                Background="#8D6E63"
+                Foreground="White"
+                FontWeight="Bold"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="btnOpenReport_Click"/>
+
+    </Grid>
+</Window>
