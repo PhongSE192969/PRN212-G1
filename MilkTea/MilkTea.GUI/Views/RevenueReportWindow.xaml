@@ -1,0 +1,178 @@
+<Window x:Class="MilkTea.GUI.Views.RevenueReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Báo cáo Doanh thu - MilkTea POS"
+        Height="850" Width="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" 
+                Background="#FF6B35" 
+                CornerRadius="5" 
+                Padding="15" 
+                Margin="0,0,0,20">
+            <TextBlock Text="📋 Báo Cáo Doanh Thu Chi Tiết" 
+                       FontSize="24" 
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- Filter Panel -->
+        <Border Grid.Row="1" 
+                Background="White" 
+                CornerRadius="5" 
+                Padding="15" 
+                Margin="0,0,0,15">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Opacity="0.1"/>
+            </Border.Effect>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" 
+                           Text="Từ tháng:" 
+                           VerticalAlignment="Center" 
+                           Margin="0,0,10,0"/>
+                <ComboBox x:Name="cboMonth" 
+                          Grid.Column="1" 
+                          Height="35"/>
+
+                <TextBlock Grid.Column="3" 
+                           Text="Năm:" 
+                           VerticalAlignment="Center" 
+                           Margin="0,0,10,0"/>
+                <ComboBox x:Name="cboYear" 
+                          Grid.Column="4" 
+                          Height="35"/>
+
+                <Button Grid.Column="6" 
+                        Content="🔍 Xem báo cáo" 
+                        Click="BtnFilter_Click"
+                        Width="130" 
+                        Height="35"
+                        Background="#4CAF50"
+                        Foreground="White"
+                        BorderThickness="0"
+                        FontSize="14"
+                        Cursor="Hand"/>
+            </Grid>
+        </Border>
+
+        <!-- DataGrid -->
+        <Border Grid.Row="2" 
+                Background="White" 
+                CornerRadius="5" 
+                Padding="10"
+                Margin="0,0,0,15">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Opacity="0.1"/>
+            </Border.Effect>
+            
+            <DataGrid x:Name="dgRevenue"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      GridLinesVisibility="Horizontal"
+                      HeadersVisibility="Column"
+                      RowHeight="35"
+                      AlternatingRowBackground="#F9F9F9">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Ngày" Binding="{Binding ReportDate, StringFormat=dd/MM/yyyy}" Width="200"/>
+                    <DataGridTextColumn Header="Doanh thu" Binding="{Binding TotalRevenue, StringFormat={}{0:N0} đ}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+        <!-- Summary Panel -->
+        <Border Grid.Row="3" 
+                Background="White" 
+                CornerRadius="5" 
+                Padding="15" 
+                Margin="0,0,0,15">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="0" Opacity="0.1"/>
+            </Border.Effect>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Số ngày có doanh thu" FontSize="12" Foreground="Gray"/>
+                    <TextBlock x:Name="txtTotalInvoices" Text="0 ngày" FontSize="20" FontWeight="Bold" Foreground="#FF6B35"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Tổng doanh thu" FontSize="12" Foreground="Gray"/>
+                    <TextBlock x:Name="txtTotalRevenue" Text="0 đ" FontSize="20" FontWeight="Bold" Foreground="#4CAF50"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Trung bình/ngày" FontSize="12" Foreground="Gray"/>
+                    <TextBlock x:Name="txtAverage" Text="0 đ" FontSize="20" FontWeight="Bold" Foreground="#2196F3"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Footer Buttons -->
+        <StackPanel Grid.Row="4" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center">
+            <Button Content="📊 Xem Biểu đồ" 
+                    Click="BtnChart_Click"
+                    Width="140" 
+                    Height="40" 
+                    Margin="5"
+                    Background="#2196F3"
+                    Foreground="White"
+                    BorderThickness="0"
+                    FontSize="14"
+                    Cursor="Hand"/>
+            
+            <Button Content="💾 Xuất Excel" 
+                    Click="BtnExport_Click"
+                    Width="140" 
+                    Height="40" 
+                    Margin="5"
+                    Background="#4CAF50"
+                    Foreground="White"
+                    BorderThickness="0"
+                    FontSize="14"
+                    Cursor="Hand"/>
+            
+            <Button Content="❌ Đóng" 
+                    Click="BtnClose_Click"
+                    Width="120" 
+                    Height="40" 
+                    Margin="5"
+                    Background="#F44336"
+                    Foreground="White"
+                    BorderThickness="0"
+                    FontSize="14"
+                    Cursor="Hand"/>
+        </StackPanel>
+    </Grid>
+</Window>
