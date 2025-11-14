@@ -28,7 +28,7 @@
                                VerticalAlignment="Center"
                                Margin="30,0,0,0"/>
                 </StackPanel>
-                
+
                 <StackPanel Orientation="Horizontal" 
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center">
@@ -73,27 +73,61 @@
                                Margin="0,0,0,15"/>
 
                     <!-- Categories -->
-                    <ScrollViewer Grid.Row="1" 
-                                  HorizontalScrollBarVisibility="Auto"
-                                  VerticalScrollBarVisibility="Disabled"
-                                  Margin="0,0,0,15">
-                        <ItemsControl x:Name="lstCategories">
-                            <ItemsControl.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <StackPanel Orientation="Horizontal"/>
-                                </ItemsPanelTemplate>
-                            </ItemsControl.ItemsPanel>
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <Button Content="{Binding CategoryName}"
-                                            Tag="{Binding CategoryId}"
-                                            Style="{StaticResource ModernButton}"
-                                            Margin="0,0,10,0"
-                                            Click="BtnCategory_Click"/>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </ScrollViewer>
+                    <!-- Categories -->
+                    <StackPanel Grid.Row="1"
+            Orientation="Horizontal"
+            Margin="0,0,0,15">
+
+                        <!-- NÚT TẤT CẢ -->
+                        <Button Content="Tất cả"
+            Tag="0"
+            Style="{StaticResource ModernButton}"
+            Margin="0,0,10,0"
+            Click="BtnCategory_Click"/>
+
+                        <Button Content="Cà phê"
+            Tag="1"
+            Style="{StaticResource ModernButton}"
+            Margin="0,0,10,0"
+            Click="BtnCategory_Click"/>
+
+                        <Button Content="Đá xay"
+            Tag="2"
+            Style="{StaticResource ModernButton}"
+            Margin="0,0,10,0"
+            Click="BtnCategory_Click"/>
+
+                        <Button Content="Nước ép"
+            Tag="3"
+            Style="{StaticResource ModernButton}"
+            Margin="0,0,10,0"
+            Click="BtnCategory_Click"/>
+
+                        <Button Content="Sinh tố"
+            Tag="4"
+            Style="{StaticResource ModernButton}"
+            Margin="0,0,10,0"
+            Click="BtnCategory_Click"/>
+
+                        <Button Content="Trà sữa"
+            Tag="5"
+            Style="{StaticResource ModernButton}"
+            Margin="0,0,10,0"
+            Click="BtnCategory_Click"/>
+
+                        <Button Content="Trà trái cây"
+            Tag="6"
+            Style="{StaticResource ModernButton}"
+            Margin="0,0,10,0"
+            Click="BtnCategory_Click"/>
+
+                        <!-- NÚT TOPPING MUA RIÊNG -->
+                        <Button Content="Topping"
+            Tag="-1"
+            Style="{StaticResource ModernButton}"
+            Click="BtnCategory_Click"/>
+                    </StackPanel>
+
 
                     <!-- Products Grid -->
                     <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
@@ -118,7 +152,7 @@
                                         <Border.Effect>
                                             <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.1"/>
                                         </Border.Effect>
-                                        
+
                                         <StackPanel Margin="10">
                                             <!-- Image Placeholder -->
                                             <Border Background="#FFF3E0"
@@ -130,14 +164,14 @@
                                                            HorizontalAlignment="Center"
                                                            VerticalAlignment="Center"/>
                                             </Border>
-                                            
+
                                             <TextBlock Text="{Binding ProductName}"
                                                        FontWeight="SemiBold"
                                                        FontSize="14"
                                                        TextWrapping="Wrap"
                                                        Height="40"
                                                        Margin="0,0,0,5"/>
-                                            
+
                                             <TextBlock FontSize="16"
                                                        FontWeight="Bold"
                                                        Foreground="#FF6B35">
@@ -186,7 +220,7 @@
                                                 <ColumnDefinition Width="*"/>
                                                 <ColumnDefinition Width="Auto"/>
                                             </Grid.ColumnDefinitions>
-                                            
+
                                             <StackPanel Grid.Column="0">
                                                 <TextBlock Text="{Binding DisplayName, Mode=OneWay}"
                                                            FontWeight="SemiBold"
@@ -202,7 +236,7 @@
                                                     <Run Text="đ"/>
                                                 </TextBlock>
                                             </StackPanel>
-                                            
+
                                             <Button Grid.Column="1"
                                                     Content="✕"
                                                     Width="30"
@@ -260,7 +294,7 @@
                                                FontSize="14"
                                                HorizontalAlignment="Right"/>
                                 </Grid>
-                                
+
                                 <!-- VAT -->
                                 <Grid Margin="0,0,0,8">
                                     <TextBlock Text="VAT (10%):" FontSize="14"/>
@@ -269,7 +303,7 @@
                                                FontSize="14"
                                                HorizontalAlignment="Right"/>
                                 </Grid>
-                                
+
                                 <!-- Discount -->
                                 <Grid Margin="0,0,0,8">
                                     <TextBlock Text="Giảm giá:" FontSize="14"/>
@@ -279,7 +313,7 @@
                                                Foreground="Red"
                                                HorizontalAlignment="Right"/>
                                 </Grid>
-                                
+
                                 <!-- Total -->
                                 <Grid Margin="0,10,0,15">
                                     <TextBlock Text="TỔNG CỘNG:" 
@@ -292,7 +326,7 @@
                                                Foreground="#FF6B35"
                                                HorizontalAlignment="Right"/>
                                 </Grid>
-                                
+
                                 <!-- Checkout Button -->
                                 <Button Content="� Thanh toán"
                                         Style="{StaticResource ModernButton}"
@@ -307,5 +341,15 @@
                 </Grid>
             </Border>
         </Grid>
+        <Button Content="Sản phẩm" HorizontalAlignment="Left" Height="56" Margin="459,10,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="-0.268,3.229" Background="#8FF4F8"/>
+        <Button Content="Mã giảm giá"
+        HorizontalAlignment="Left"
+        Height="56"
+        Margin="691,10,0,0"
+        VerticalAlignment="Top"
+        Width="168"
+        Background="#8FF4F8"
+        Click="BtnDiscount_Click"/>
+        <Button Content="Danh mục" HorizontalAlignment="Left" Height="56" Margin="921,10,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="-0.268,3.229" Background="#8FF4F8"/>
     </Grid>
 </Window>

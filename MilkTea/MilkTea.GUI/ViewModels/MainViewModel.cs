@@ -186,7 +186,38 @@ namespace MilkTea.GUI.ViewModels
             CartItems.Remove(item);
             UpdateTotals();
         }
-        
+        public void AddToppingOnlyToCart(Topping topping, int quantity)
+        {
+            // Gộp topping cùng loại nếu đã có trong giỏ
+            var existingItem = CartItems.FirstOrDefault(item =>
+                item.ProductId == 0 &&               // 0 = không gắn với sản phẩm chính
+                item.ToppingId == topping.ToppingId);
+
+            if (existingItem != null)
+            {
+                existingItem.Quantity += quantity;
+            }
+            else
+            {
+                var cartItem = new CartItem
+                {
+                    // Không có sản phẩm chính, chỉ là topping
+                    ProductId = 0,                    // vì CartItem.ProductId là int (không nullable)
+                    ProductName = null,
+                    ProductPrice = 0,
+
+                    Quantity = quantity,
+
+                    ToppingId = topping.ToppingId,
+                    ToppingName = topping.ToppingName,
+                    ToppingPrice = topping.Price
+                };
+
+                CartItems.Add(cartItem);
+            }
+
+            UpdateTotals();
+        }
         public void ClearCart()
         {
             CartItems.Clear();

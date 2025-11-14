@@ -1,0 +1,16 @@
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.BLL.deps.json
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.BLL.dll
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.BLL.pdb
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.DAL.dll
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.DAL.pdb
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.csproj.AssemblyReference.cache
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.AssemblyInfoInputs.cache
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.AssemblyInfo.cs
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.csproj.CoreCompileInputs.cache
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.sourcelink.json
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea..039A4F85.Up2Date
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.dll
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\refint\MilkTea.BLL.dll
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.pdb
+C:\Users\ndpho\Desktop\trasua020\MilkTea\MilkTea.BLL\obj\Debug\net9.0\ref\MilkTea.BLL.dll

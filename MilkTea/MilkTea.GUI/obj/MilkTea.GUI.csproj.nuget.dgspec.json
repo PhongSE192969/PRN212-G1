@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj": {}
+    "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj": {}
   },
   "projects": {
-    "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj": {
+    "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj",
         "projectName": "MilkTea.BLL",
-        "projectPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.BLL\\obj\\",
+        "projectPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj",
+        "packagesPath": "C:\\Users\\ndpho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ndpho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj": {
-                "projectPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj"
+              "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj": {
+                "projectPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj"
               }
             }
           }
@@ -66,21 +70,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj": {
+    "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj",
         "projectName": "MilkTea.DAL",
-        "projectPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\obj\\",
+        "projectPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.DAL\\MilkTea.DAL.csproj",
+        "packagesPath": "C:\\Users\\ndpho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ndpho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,21 +166,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj": {
+    "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj",
+        "projectUniqueName": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj",
         "projectName": "MilkTea.GUI",
-        "projectPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\obj\\",
+        "projectPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj",
+        "packagesPath": "C:\\Users\\ndpho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.GUI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ndpho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -187,8 +199,8 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj": {
-                "projectPath": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj"
+              "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj": {
+                "projectPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj"
               }
             }
           }
@@ -253,7 +265,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -74,21 +74,29 @@ namespace MilkTea.BLL.Services
                 }
                 
                 invoice.InvoiceId = invoiceId;
-                
+
                 // Create invoice details
                 foreach (var item in cartItems)
                 {
                     var detail = new InvoiceDetail
                     {
                         InvoiceId = invoice.InvoiceId,
-                        ProductId = item.ProductId,
-                        ToppingId = item.ToppingId,
+
+                        // FIX: nếu ProductId = 0 (topping mua riêng) thì cho DB là NULL
+                        ProductId = (item.ProductId == 0) ? null : item.ProductId,
+
+                        // OPTIONAL: nếu bạn có dùng 0 cho "không có topping" thì làm giống vậy,
+                        // còn nếu luôn null rồi thì giữ nguyên cũng được
+                        ToppingId = (item.ToppingId == 0) ? null : item.ToppingId,
+
                         Quantity = item.Quantity,
                         UnitPrice = item.UnitPrice
+                        // Subtotal là computed column trong DB nên không cần set
                     };
+
                     context.InvoiceDetails.Add(detail);
                 }
-                
+
                 context.SaveChanges();
                 transaction.Commit();
                 
