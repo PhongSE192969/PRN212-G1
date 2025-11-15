@@ -207,5 +207,6 @@ namespace MilkTea.BLL.Services
                 .Where(i => i.InvoiceDate.Date == date.Date)
                 .Sum(i => (decimal?)i.FinalAmount) ?? 0;
         }
+
     }
 }

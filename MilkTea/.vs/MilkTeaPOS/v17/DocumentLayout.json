@@ -1,166 +1,297 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\KI 5\\PRN212\\MilkTea\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|d:\\ki 5\\prn212\\milktea\\milktea.gui\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\quantityinputwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\quantityinputwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|d:\\ki 5\\prn212\\milktea\\milktea.gui\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\invoicedetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\invoicedetailwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|d:\\ki 5\\prn212\\milktea\\milktea.gui\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\invoicedetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\invoicedetailwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|d:\\ki 5\\prn212\\milktea\\milktea.gui\\views\\qrpaymentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\qrpaymentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\quantityinputwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\quantityinputwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|d:\\ki 5\\prn212\\milktea\\milktea.gui\\views\\qrpaymentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\quantityinputwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\quantityinputwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\7c0c2bba808e0f2b7a12b62178b5221c12a0421a503777ec5b37acafcb496885\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\invoicedetailwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\invoicedetailwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.bll\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|solutionrelative:milktea.bll\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\utils\\pdfexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\utils\\pdfexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.bll\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|solutionrelative:milktea.bll\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.bll\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|solutionrelative:milktea.bll\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.bll\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|solutionrelative:milktea.bll\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.bll\\services\\toppingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|solutionrelative:milktea.bll\\services\\toppingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.bll\\services\\discountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|solutionrelative:milktea.bll\\services\\discountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\INVOICE_DETAIL_FEATURE_README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:INVOICE_DETAIL_FEATURE_README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\revenuereportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\revenuereportwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\revenuechartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\revenuechartwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.dal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|solutionrelative:milktea.dal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.dal\\data\\teaposdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|solutionrelative:milktea.dal\\data\\teaposdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\revenuereportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\revenuereportwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\addtocartdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\addtocartdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\checkoutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\checkoutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\qrpaymentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\qrpaymentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|d:\\ki 5\\prn212\\milktea\\milktea.dal\\migrations\\teaposdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\qrpaymentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\qrpaymentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.dal\\migrations\\teaposdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|solutionrelative:milktea.dal\\migrations\\teaposdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|d:\\ki 5\\prn212\\milktea\\milktea.dal\\migrations\\20251103074511_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.dal\\migrations\\20251103074511_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84E12D65-AA99-4B40-9E4F-8CE419F7C4CC}|MilkTea.DAL\\MilkTea.DAL.csproj|solutionrelative:milktea.dal\\migrations\\20251103074511_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|d:\\ki 5\\prn212\\milktea\\milktea.bll\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8661A010-89E4-4F76-8E80-C411582E075C}|MilkTea.BLL\\MilkTea.BLL.csproj|solutionrelative:milktea.bll\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|d:\\ki 5\\prn212\\milktea\\milktea.gui\\appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\appsettings.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|d:\\ki 5\\prn212\\milktea\\milktea.gui\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|c:\\users\\admin\\documents\\prn202\\new folder\\milktea\\milktea.gui\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1FD43007-B23F-493F-8A42-D587551FB72F}|MilkTea.GUI\\MilkTea.GUI.csproj|solutionrelative:milktea.gui\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\LIST_DETAILS_UPDATE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LIST_DETAILS_UPDATE.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "DockedHeight": 252,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuantityInputWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QuantityInputWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\QuantityInputWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QuantityInputWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\QuantityInputWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-15T05:45:59.487Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "QRPaymentWindow.xaml.cs",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\Views\\QRPaymentWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\QRPaymentWindow.xaml.cs",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\Views\\QRPaymentWindow.xaml.cs",
-              "RelativeToolTip": "MilkTea.GUI\\Views\\QRPaymentWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCAAAAAxAAAAAAAAAA==",
+              "Title": "QuantityInputWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QuantityInputWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\QuantityInputWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QuantityInputWindow.xaml.cs",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\QuantityInputWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T09:04:27.129Z",
+              "WhenOpened": "2025-11-15T05:42:19.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "QRPaymentWindow.xaml",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\Views\\QRPaymentWindow.xaml",
-              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\QRPaymentWindow.xaml",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\Views\\QRPaymentWindow.xaml",
-              "RelativeToolTip": "MilkTea.GUI\\Views\\QRPaymentWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-03T09:04:22.159Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BaseViewModel.cs",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\ViewModels\\BaseViewModel.cs",
-              "RelativeDocumentMoniker": "MilkTea.GUI\\ViewModels\\BaseViewModel.cs",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\ViewModels\\BaseViewModel.cs",
-              "RelativeToolTip": "MilkTea.GUI\\ViewModels\\BaseViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:25:56.618Z",
+              "Title": "InvoiceDetailWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-15T04:01:29.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "MilkTea.GUI\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "MilkTea.GUI\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Title": "InvoiceDetailWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml.cs",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:25:55.749Z",
+              "WhenOpened": "2025-11-15T03:58:13.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\ViewModels\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "MilkTea.GUI\\ViewModels\\MainViewModel.cs",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\ViewModels\\MainViewModel.cs",
-              "RelativeToolTip": "MilkTea.GUI\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:25:53.805Z",
+              "DocumentIndex": 4,
+              "Title": "QuantityInputWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QuantityInputWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\QuantityInputWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QuantityInputWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\QuantityInputWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-15T05:42:15.631Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TeaPOSDbContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\Migrations\\TeaPOSDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "MilkTea.DAL\\Migrations\\TeaPOSDbContextModelSnapshot.cs",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\Migrations\\TeaPOSDbContextModelSnapshot.cs",
-              "RelativeToolTip": "MilkTea.DAL\\Migrations\\TeaPOSDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\7c0c2bba808e0f2b7a12b62178b5221c12a0421a503777ec5b37acafcb496885\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7c0c2bba808e0f2b7a12b62178b5221c12a0421a503777ec5b37acafcb496885\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\7c0c2bba808e0f2b7a12b62178b5221c12a0421a503777ec5b37acafcb496885\\XamlReader.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7c0c2bba808e0f2b7a12b62178b5221c12a0421a503777ec5b37acafcb496885\\XamlReader.cs [Read Only]",
+              "ViewState": "AgIAAKMBAAAAAAAAAAAAAKIBAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:25:35.796Z"
+              "WhenOpened": "2025-11-15T04:07:55.947Z",
+              "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "20251103074511_InitialCreate.cs",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\Migrations\\20251103074511_InitialCreate.cs",
-              "RelativeDocumentMoniker": "MilkTea.DAL\\Migrations\\20251103074511_InitialCreate.cs",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.DAL\\Migrations\\20251103074511_InitialCreate.cs",
-              "RelativeToolTip": "MilkTea.DAL\\Migrations\\20251103074511_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:25:34.143Z"
+              "Title": "InvoiceDetailWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\InvoiceDetailWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-15T03:56:22.425Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "PdfExporter.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Utils\\PdfExporter.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Utils\\PdfExporter.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Utils\\PdfExporter.cs",
+              "RelativeToolTip": "MilkTea.GUI\\Utils\\PdfExporter.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:04:23.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "MilkTea.BLL\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\OrderService.cs",
+              "RelativeToolTip": "MilkTea.BLL\\Services\\OrderService.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAgwDMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:33:18.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "MilkTea.BLL\\Services\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\InvoiceService.cs",
+              "RelativeToolTip": "MilkTea.BLL\\Services\\InvoiceService.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAgwNEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:03:40.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AppConfig.cs",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.BLL\\AppConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\AppConfig.cs",
               "RelativeDocumentMoniker": "MilkTea.BLL\\AppConfig.cs",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.BLL\\AppConfig.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\AppConfig.cs",
               "RelativeToolTip": "MilkTea.BLL\\AppConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -168,37 +299,311 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "MilkTea.BLL\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\CategoryService.cs",
+              "RelativeToolTip": "MilkTea.BLL\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:33:14.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ToppingService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\ToppingService.cs",
+              "RelativeDocumentMoniker": "MilkTea.BLL\\Services\\ToppingService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\ToppingService.cs",
+              "RelativeToolTip": "MilkTea.BLL\\Services\\ToppingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:33:57.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DiscountService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\DiscountService.cs",
+              "RelativeDocumentMoniker": "MilkTea.BLL\\Services\\DiscountService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.BLL\\Services\\DiscountService.cs",
+              "RelativeToolTip": "MilkTea.BLL\\Services\\DiscountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:03:37.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "INVOICE_DETAIL_FEATURE_README.md",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\INVOICE_DETAIL_FEATURE_README.md",
+              "RelativeDocumentMoniker": "INVOICE_DETAIL_FEATURE_README.md",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\INVOICE_DETAIL_FEATURE_README.md",
+              "RelativeToolTip": "INVOICE_DETAIL_FEATURE_README.md",
+              "ViewState": "AgIAAFAAAAAAAAAAAADwvzMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-14T03:39:08.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAQwJYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:26:44.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\appsettings.json",
               "RelativeDocumentMoniker": "MilkTea.GUI\\appsettings.json",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\appsettings.json",
               "RelativeToolTip": "MilkTea.GUI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T03:10:56.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T03:02:28.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RevenueReportWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\RevenueReportWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\RevenueReportWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\RevenueReportWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\RevenueReportWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T03:02:35.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RevenueChartWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\RevenueChartWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\RevenueChartWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\RevenueChartWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\RevenueChartWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T03:02:31.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TeaPOSDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.DAL\\Data\\TeaPOSDbContext.cs",
+              "RelativeDocumentMoniker": "MilkTea.DAL\\Data\\TeaPOSDbContext.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.DAL\\Data\\TeaPOSDbContext.cs",
+              "RelativeToolTip": "MilkTea.DAL\\Data\\TeaPOSDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwBoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:15:15.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.DAL\\appsettings.json",
+              "RelativeDocumentMoniker": "MilkTea.DAL\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.DAL\\appsettings.json",
+              "RelativeToolTip": "MilkTea.DAL\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-14T03:21:17.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RevenueReportWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\RevenueReportWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\RevenueReportWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\RevenueReportWindow.xaml.cs",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\RevenueReportWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAF0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T03:02:41.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddToCartDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\AddToCartDialog.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\AddToCartDialog.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\AddToCartDialog.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\AddToCartDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T03:02:26.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CheckoutWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\CheckoutWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\CheckoutWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\CheckoutWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\CheckoutWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-14T03:02:22.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "QRPaymentWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QRPaymentWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\QRPaymentWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QRPaymentWindow.xaml.cs",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\QRPaymentWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T09:04:27.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QRPaymentWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QRPaymentWindow.xaml",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\QRPaymentWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\QRPaymentWindow.xaml",
+              "RelativeToolTip": "MilkTea.GUI\\Views\\QRPaymentWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-03T09:04:22.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "MilkTea.GUI\\ViewModels\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T08:25:56.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "MilkTea.GUI\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T08:25:55.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "MilkTea.GUI\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T08:25:53.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TeaPOSDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.DAL\\Migrations\\TeaPOSDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "MilkTea.DAL\\Migrations\\TeaPOSDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.DAL\\Migrations\\TeaPOSDbContextModelSnapshot.cs",
+              "RelativeToolTip": "MilkTea.DAL\\Migrations\\TeaPOSDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T08:25:35.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20251103074511_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.DAL\\Migrations\\20251103074511_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MilkTea.DAL\\Migrations\\20251103074511_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.DAL\\Migrations\\20251103074511_InitialCreate.cs",
+              "RelativeToolTip": "MilkTea.DAL\\Migrations\\20251103074511_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T08:25:34.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\appsettings.json",
+              "RelativeDocumentMoniker": "MilkTea.GUI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\appsettings.json",
+              "RelativeToolTip": "MilkTea.GUI\\appsettings.json",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-03T07:42:50.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 32,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs",
               "ToolTip": "C:\\Users\\Admin\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs [Read Only]",
-              "ViewState": "AgIAAJkBAAAAAAAAAAAcwKMBAAACAAAAAQAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e838e50353acd66f964b3aa62f2ead8b89cb9228844b858a3e0b8d14655eca6e\\XamlReader.cs [Read Only]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T07:39:13.75Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 34,
               "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\Views\\LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "MilkTea.GUI\\Views\\LoginWindow.xaml",
-              "ToolTip": "D:\\KI 5\\PRN212\\MilkTea\\MilkTea.GUI\\Views\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\MilkTea.GUI\\Views\\LoginWindow.xaml",
               "RelativeToolTip": "MilkTea.GUI\\Views\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-03T07:38:19.221Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 121,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "LIST_DETAILS_UPDATE.md",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\LIST_DETAILS_UPDATE.md",
+              "RelativeDocumentMoniker": "LIST_DETAILS_UPDATE.md",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\PRN202\\New folder\\MilkTea\\LIST_DETAILS_UPDATE.md",
+              "RelativeToolTip": "LIST_DETAILS_UPDATE.md",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-15T04:05:49.2Z"
             }
           ]
         }

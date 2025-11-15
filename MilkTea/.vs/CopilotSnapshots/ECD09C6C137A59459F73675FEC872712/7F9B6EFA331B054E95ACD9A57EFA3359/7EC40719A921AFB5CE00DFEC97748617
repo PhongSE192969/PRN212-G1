@@ -1,0 +1,342 @@
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Windows;
+using MilkTea.BLL.Services;
+using MilkTea.DAL.Data;
+using MilkTea.DAL.Models;
+
+namespace MilkTea.GUI.Views
+{
+    public partial class InvoiceDetailWindow : Window
+    {
+        private readonly InvoiceService _invoiceService;
+private readonly TeaPOSDbContext _context;
+        private Invoice? _selectedInvoice;
+  private ObservableCollection<InvoiceDetail> _invoiceDetails;
+
+        public InvoiceDetailWindow()
+        {
+     InitializeComponent();
+          _invoiceService = new InvoiceService();
+  _context = new TeaPOSDbContext();
+            _invoiceDetails = new ObservableCollection<InvoiceDetail>();
+            lstInvoiceDetails.ItemsSource = _invoiceDetails;
+
+            // Set default dates
+         dpFromDate.SelectedDate = DateTime.Today.AddDays(-30);
+ dpToDate.SelectedDate = DateTime.Today;
+
+            LoadInvoices();
+            LoadProducts();
+            LoadToppings();
+     }
+
+        private void LoadInvoices()
+        {
+            try
+   {
+           var invoices = _invoiceService.GetRecentInvoices(100);
+      dgInvoices.ItemsSource = invoices.OrderByDescending(i => i.InvoiceDate).ToList();
+    }
+            catch (Exception ex)
+            {
+        MessageBox.Show($"L?i t?i danh sách hóa ??n:\n{ex.Message}", "L?i", 
+    MessageBoxButton.OK, MessageBoxImage.Error);
+     }
+        }
+
+        private void LoadProducts()
+     {
+            try
+            {
+     var products = _context.Products.ToList();
+      cmbProducts.ItemsSource = products;
+                cmbProducts.DisplayMemberPath = "ProductName";
+      cmbProducts.SelectedValuePath = "ProductId";
+     }
+          catch (Exception ex)
+   {
+      MessageBox.Show($"L?i t?i danh sách s?n ph?m:\n{ex.Message}", "L?i",
+        MessageBoxButton.OK, MessageBoxImage.Error);
+      }
+        }
+
+        private void LoadToppings()
+        {
+      try
+         {
+     var toppings = _context.Toppings.ToList();
+           cmbToppings.ItemsSource = toppings;
+     cmbToppings.DisplayMemberPath = "ToppingName";
+      cmbToppings.SelectedValuePath = "ToppingId";
+      }
+    catch (Exception ex)
+            {
+     MessageBox.Show($"L?i t?i danh sách topping:\n{ex.Message}", "L?i",
+     MessageBoxButton.OK, MessageBoxImage.Error);
+  }
+        }
+
+        private void DgInvoices_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+      {
+            if (dgInvoices.SelectedItem is Invoice invoice)
+            {
+          _selectedInvoice = invoice;
+        LoadInvoiceDetails(invoice.InvoiceId);
+UpdateSummary();
+ }
+        }
+
+        private void LoadInvoiceDetails(int invoiceId)
+        {
+ try
+       {
+         var invoice = _invoiceService.GetInvoiceById(invoiceId);
+       if (invoice != null)
+   {
+           _invoiceDetails.Clear();
+      foreach (var detail in invoice.InvoiceDetails)
+          {
+_invoiceDetails.Add(detail);
+  }
+    }
+            }
+            catch (Exception ex)
+            {
+          MessageBox.Show($"L?i t?i chi ti?t hóa ??n:\n{ex.Message}", "L?i",
+MessageBoxButton.OK, MessageBoxImage.Error);
+    }
+        }
+
+        private void BtnAddDetail_Click(object sender, RoutedEventArgs e)
+        {
+    try
+    {
+                if (_selectedInvoice == null)
+        {
+      MessageBox.Show("Vui lòng ch?n m?t hóa ??n!", "Thông báo",
+    MessageBoxButton.OK, MessageBoxImage.Warning);
+          return;
+     }
+
+if (cmbProducts.SelectedValue == null)
+    {
+           MessageBox.Show("Vui lòng ch?n s?n ph?m!", "Thông báo",
+     MessageBoxButton.OK, MessageBoxImage.Warning);
+           return;
+            }
+
+           if (!int.TryParse(txtQuantity.Text, out int quantity) || quantity <= 0)
+                {
+         MessageBox.Show("S? l??ng không h?p l?!", "Thông báo",
+            MessageBoxButton.OK, MessageBoxImage.Warning);
+           return;
+           }
+
+       int productId = (int)cmbProducts.SelectedValue;
+       int? toppingId = cmbToppings.SelectedValue != null ? (int?)cmbToppings.SelectedValue : null;
+
+         var product = _context.Products.Find(productId);
+     if (product == null)
+  {
+                  MessageBox.Show("S?n ph?m không t?n t?i!", "L?i",
+       MessageBoxButton.OK, MessageBoxImage.Error);
+              return;
+            }
+
+         var detail = new InvoiceDetail
+     {
+           InvoiceId = _selectedInvoice.InvoiceId,
+        ProductId = productId,
+             ToppingId = toppingId,
+  Quantity = quantity,
+           UnitPrice = product.Price
+         };
+
+     _context.InvoiceDetails.Add(detail);
+                _context.SaveChanges();
+
+                _invoiceDetails.Add(detail);
+       UpdateSummary();
+
+       // Reset form
+       cmbProducts.SelectedValue = null;
+       cmbToppings.SelectedValue = null;
+       txtQuantity.Text = "1";
+
+              MessageBox.Show("? ?ã thêm chi ti?t hóa ??n!", "Thành công",
+         MessageBoxButton.OK, MessageBoxImage.Information);
+       }
+    catch (Exception ex)
+      {
+       MessageBox.Show($"L?i thêm chi ti?t:\n{ex.Message}", "L?i",
+    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void BtnRemoveDetail_Click(object sender, RoutedEventArgs e)
+     {
+       try
+      {
+       if (sender is Button btn && btn.Tag is InvoiceDetail detail)
+        {
+        var result = MessageBox.Show("B?n có ch?c mu?n xóa chi ti?t này?", "Xác nh?n",
+             MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+        if (result == MessageBoxResult.Yes)
+       {
+     var dbDetail = _context.InvoiceDetails.Find(detail.InvoiceDetailId);
+        if (dbDetail != null)
+               {
+    _context.InvoiceDetails.Remove(dbDetail);
+        _context.SaveChanges();
+
+        _invoiceDetails.Remove(detail);
+   UpdateSummary();
+
+   MessageBox.Show("? ?ã xóa chi ti?t hóa ??n!", "Thành công",
+            MessageBoxButton.OK, MessageBoxImage.Information);
+      }
+  }
+}
+            }
+    catch (Exception ex)
+   {
+   MessageBox.Show($"L?i xóa chi ti?t:\n{ex.Message}", "L?i",
+                MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+     }
+
+        private void BtnSearch_Click(object sender, RoutedEventArgs e)
+  {
+            try
+      {
+       var searchText = txtSearchInvoice.Text.Trim();
+      var fromDate = dpFromDate.SelectedDate ?? DateTime.Today.AddDays(-30);
+      var toDate = dpToDate.SelectedDate ?? DateTime.Today;
+
+   var invoices = _invoiceService.GetInvoicesByDateRange(fromDate, toDate);
+
+       if (!string.IsNullOrEmpty(searchText))
+        {
+  if (int.TryParse(searchText, out int invoiceId))
+         {
+            invoices = invoices.Where(i => i.InvoiceId == invoiceId).ToList();
+      }
+      else
+            {
+      invoices = invoices.Where(i =>
+     i.User != null && i.User.FullName.Contains(searchText, StringComparison.OrdinalIgnoreCase)
+    ).ToList();
+          }
+       }
+
+            dgInvoices.ItemsSource = invoices.OrderByDescending(i => i.InvoiceDate).ToList();
+            }
+    catch (Exception ex)
+        {
+            MessageBox.Show($"L?i tìm ki?m:\n{ex.Message}", "L?i",
+ MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+   private void BtnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            txtSearchInvoice.Clear();
+ dpFromDate.SelectedDate = DateTime.Today.AddDays(-30);
+   dpToDate.SelectedDate = DateTime.Today;
+        LoadInvoices();
+ _invoiceDetails.Clear();
+            UpdateSummary();
+ }
+
+private void UpdateSummary()
+        {
+            if (_selectedInvoice == null)
+    {
+        txtSummarySubtotal.Text = "0 ?";
+            txtSummaryVAT.Text = "0 ?";
+           txtSummaryDiscount.Text = "0 ?";
+             txtSummaryTotal.Text = "0 ?";
+       return;
+         }
+
+            decimal subtotal = _invoiceDetails.Sum(d => d.Subtotal ?? 0);
+      decimal vat = subtotal * 0.1m;
+  decimal discount = _selectedInvoice.Discount;
+            decimal total = subtotal + vat - discount;
+
+    txtSummarySubtotal.Text = $"{subtotal:N0} ?";
+            txtSummaryVAT.Text = $"{vat:N0} ?";
+            txtSummaryDiscount.Text = $"{discount:N0} ?";
+       txtSummaryTotal.Text = $"{total:N0} ?";
+        }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+   try
+        {
+      if (_selectedInvoice == null)
+            {
+        MessageBox.Show("Vui lòng ch?n m?t hóa ??n!", "Thông báo",
+     MessageBoxButton.OK, MessageBoxImage.Warning);
+     return;
+          }
+
+        _context.SaveChanges();
+     LoadInvoices();
+     MessageBox.Show("? ?ã l?u thay ??i!", "Thành công",
+ MessageBoxButton.OK, MessageBoxImage.Information);
+   }
+       catch (Exception ex)
+            {
+     MessageBox.Show($"L?i l?u d? li?u:\n{ex.Message}", "L?i",
+          MessageBoxButton.OK, MessageBoxImage.Error);
+  }
+    }
+
+   private void BtnDeleteInvoice_Click(object sender, RoutedEventArgs e)
+        {
+ try
+        {
+       if (_selectedInvoice == null)
+      {
+         MessageBox.Show("Vui lòng ch?n m?t hóa ??n ?? xóa!", "Thông báo",
+  MessageBoxButton.OK, MessageBoxImage.Warning);
+        return;
+      }
+
+var result = MessageBox.Show($"B?n có ch?c mu?n xóa hóa ??n #{_selectedInvoice.InvoiceId}?\n\nHành ??ng này không th? hoàn tác!",
+           "Xác nh?n xóa", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
+                if (result == MessageBoxResult.Yes)
+       {
+    var invoiceToDelete = _context.Invoices.Find(_selectedInvoice.InvoiceId);
+        if (invoiceToDelete != null)
+    {
+             _context.Invoices.Remove(invoiceToDelete);
+      _context.SaveChanges();
+
+      LoadInvoices();
+      _invoiceDetails.Clear();
+          UpdateSummary();
+
+        MessageBox.Show("? ?ã xóa hóa ??n!", "Thành công",
+           MessageBoxButton.OK, MessageBoxImage.Information);
+           }
+            }
+          }
+catch (Exception ex)
+ {
+        MessageBox.Show($"L?i xóa hóa ??n:\n{ex.Message}", "L?i",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+     }
+  }
+
+      private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+        this.Close();
+   }
+    }
+}

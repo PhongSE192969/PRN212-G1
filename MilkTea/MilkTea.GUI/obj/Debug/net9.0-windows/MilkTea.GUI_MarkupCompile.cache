@@ -1,0 +1,20 @@
+﻿MilkTea.GUI
+
+
+winexe
+C#
+.cs
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.GUI\obj\Debug\net9.0-windows\
+MilkTea.GUI
+none
+false
+TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.GUI\App.xaml
+91393990563
+
+19-1491011261
+249636018412
+Views\AddToCartDialog.xaml;Views\CheckoutWindow.xaml;Views\InvoiceDetailWindow.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\QRPaymentWindow.xaml;Views\QuantityInputWindow.xaml;Views\RevenueChartWindow.xaml;Views\RevenueReportWindow.xaml;
+
+False
+

@@ -144,6 +144,11 @@ namespace MilkTea.GUI.Views
             var reportWindow = new RevenueReportWindow();
             reportWindow.Show();
         }
+        private void BtnInvoices_Click(object sender, RoutedEventArgs e)
+        {
+            var invoiceDetailWindow = new InvoiceDetailWindow();
+            invoiceDetailWindow.Show();
+        }
 
         private void BtnLogout_Click(object sender, RoutedEventArgs e)
         {
@@ -158,5 +163,6 @@ namespace MilkTea.GUI.Views
                 this.Close();
             }
         }
+
     }
 }

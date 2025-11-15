@@ -1,0 +1,482 @@
+﻿using System;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Windows;
+using System.Windows.Controls;
+using Microsoft.EntityFrameworkCore;
+using MilkTea.BLL.Services;
+using MilkTea.DAL.Data;
+using MilkTea.DAL.Models;
+
+namespace MilkTea.GUI.Views
+{
+    public partial class InvoiceDetailWindow : Window
+    {
+        private readonly InvoiceService _invoiceService;
+        private readonly TeaPOSDbContext _context;
+        private Invoice? _selectedInvoice;
+        private ObservableCollection<InvoiceDetail> _invoiceDetails;
+
+        public InvoiceDetailWindow()
+        {
+            InitializeComponent();
+
+            _invoiceService = new InvoiceService();
+            _context = new TeaPOSDbContext();
+            _invoiceDetails = new ObservableCollection<InvoiceDetail>();
+            lstInvoiceDetails.ItemsSource = _invoiceDetails;
+
+            
+            dpFromDate.SelectedDate = DateTime.Today.AddDays(-30);
+            dpToDate.SelectedDate = DateTime.Today;
+
+            LoadInvoices();
+            LoadProducts();
+            LoadToppings();
+        }
+
+        private void LoadInvoices()
+        {
+            try
+            {
+                var invoices = _invoiceService.GetRecentInvoices(100);
+                dgInvoices.ItemsSource = invoices.OrderByDescending(i => i.InvoiceDate).ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading invoices:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void LoadProducts()
+        {
+            try
+            {
+                var products = _context.Products.ToList();
+                cmbProducts.ItemsSource = products;
+                cmbProducts.DisplayMemberPath = "ProductName";
+                cmbProducts.SelectedValuePath = "ProductId";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading products:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void LoadToppings()
+        {
+            try
+            {
+                var toppings = _context.Toppings.ToList();
+                cmbToppings.ItemsSource = toppings;
+                cmbToppings.DisplayMemberPath = "ToppingName";
+                cmbToppings.SelectedValuePath = "ToppingId";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading toppings:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void DgInvoices_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (dgInvoices.SelectedItem is Invoice invoice)
+            {
+                _selectedInvoice = invoice;
+                LoadInvoiceDetails(invoice.InvoiceId);
+                UpdateSummary();
+            }
+        }
+
+        private void LoadInvoiceDetails(int invoiceId)
+        {
+            try
+            {
+                var invoice = _invoiceService.GetInvoiceById(invoiceId);
+                if (invoice != null)
+                {
+                    _invoiceDetails.Clear();
+                    foreach (var detail in invoice.InvoiceDetails)
+                    {
+                        _invoiceDetails.Add(detail);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading invoice details:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void BtnAddDetail_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (_selectedInvoice == null)
+                {
+                    MessageBox.Show("Please select an invoice!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (cmbProducts.SelectedValue == null)
+                {
+                    MessageBox.Show("Please select a product!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (!int.TryParse(txtQuantity.Text, out int quantity) || quantity <= 0)
+                {
+                    MessageBox.Show("Invalid quantity!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                int productId = (int)cmbProducts.SelectedValue;
+                int? toppingId = cmbToppings.SelectedValue != null ? (int?)cmbToppings.SelectedValue : null;
+
+                var product = _context.Products.Find(productId);
+                if (product == null)
+                {
+                    MessageBox.Show("Product not found!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                
+                var existingDetail = _context.InvoiceDetails.FirstOrDefault(d =>
+                    d.InvoiceId == _selectedInvoice.InvoiceId &&
+                    d.ProductId == productId &&
+                    d.ToppingId == toppingId);
+
+                if (existingDetail != null)
+                {
+                    
+                    existingDetail.Quantity += quantity;
+                    _context.SaveChanges();
+
+                   
+                    var uiDetail = _invoiceDetails.FirstOrDefault(d =>
+                        d.InvoiceId == existingDetail.InvoiceId &&
+                        d.ProductId == existingDetail.ProductId &&
+                        d.ToppingId == existingDetail.ToppingId);
+
+                    if (uiDetail != null)
+                    {
+                        uiDetail.Quantity = existingDetail.Quantity;
+                    }
+
+                    MessageBox.Show($"Updated quantity for {product.ProductName} to {existingDetail.Quantity}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    // New product, add it
+                    var detail = new InvoiceDetail
+                    {
+                        InvoiceId = _selectedInvoice.InvoiceId,
+                        ProductId = productId,
+                        ToppingId = toppingId,
+                        Quantity = quantity,
+                        UnitPrice = product.Price
+                    };
+
+                    _context.InvoiceDetails.Add(detail);
+                    _context.SaveChanges();
+
+                    _invoiceDetails.Add(detail);
+
+                    MessageBox.Show("Added invoice detail successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+
+               
+                var updatedInvoice = _invoiceService.GetInvoiceById(_selectedInvoice.InvoiceId);
+                if (updatedInvoice != null)
+                {
+                    _selectedInvoice = updatedInvoice;
+                    _invoiceDetails.Clear();
+                    foreach (var detail in updatedInvoice.InvoiceDetails)
+                    {
+                        _invoiceDetails.Add(detail);
+                    }
+                }
+
+                UpdateSummary();
+
+                // Reset form
+                cmbProducts.SelectedValue = null;
+                cmbToppings.SelectedValue = null;
+                txtQuantity.Text = "1";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error adding detail:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void BtnRemoveDetail_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (sender is Button btn && btn.Tag is InvoiceDetail detail)
+                {
+                    var result = MessageBox.Show($"Do you want to:\n\n[Yes] Delete entire item\n[No] Reduce quantity", "Choose action", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        // Delete entire detail
+                        var dbDetail = _context.InvoiceDetails.FirstOrDefault(d =>
+                            d.InvoiceId == detail.InvoiceId &&
+                            d.ProductId == detail.ProductId &&
+                            d.ToppingId == detail.ToppingId);
+
+                        if (dbDetail != null)
+                        {
+                            _context.InvoiceDetails.Remove(dbDetail);
+                            _context.SaveChanges();
+
+                            _invoiceDetails.Remove(detail);
+
+                            MessageBox.Show("Deleted invoice detail completely!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        }
+                    }
+                    else if (result == MessageBoxResult.No)
+                    {
+                        
+                        var reduceWindow = new QuantityInputWindow(detail.Quantity);
+                        if (reduceWindow.ShowDialog() == true)
+                        {
+                            int quantityToReduce = reduceWindow.QuantityValue;
+
+                            var dbDetail = _context.InvoiceDetails.FirstOrDefault(d =>
+                                d.InvoiceId == detail.InvoiceId &&
+                                d.ProductId == detail.ProductId &&
+                                d.ToppingId == detail.ToppingId);
+
+                            if (dbDetail != null)
+                            {
+                                if (quantityToReduce >= dbDetail.Quantity)
+                                {
+                                    
+                                    _context.InvoiceDetails.Remove(dbDetail);
+                                    _context.SaveChanges();
+                                    _invoiceDetails.Remove(detail);
+
+                                    MessageBox.Show($"Deleted item (reduced by {quantityToReduce})!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                                }
+                                else
+                                {
+                                   
+                                    dbDetail.Quantity -= quantityToReduce;
+                                    _context.SaveChanges();
+
+                                   
+                                    detail.Quantity = dbDetail.Quantity;
+                                    MessageBox.Show($"Reduced quantity by {quantityToReduce}. Remaining: {dbDetail.Quantity}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error modifying detail:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            
+            if (_selectedInvoice != null)
+            {
+                var updatedInvoice = _invoiceService.GetInvoiceById(_selectedInvoice.InvoiceId);
+                if (updatedInvoice != null)
+                {
+                    _selectedInvoice = updatedInvoice;
+                    _invoiceDetails.Clear();
+                    foreach (var detail2 in updatedInvoice.InvoiceDetails)
+                    {
+                        _invoiceDetails.Add(detail2);
+                    }
+                }
+            }
+
+            UpdateSummary();
+        }
+
+        private void BtnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var searchText = txtSearchInvoice.Text.Trim();
+                var fromDate = dpFromDate.SelectedDate ?? DateTime.Today.AddDays(-30);
+                var toDate = dpToDate.SelectedDate ?? DateTime.Today;
+
+                var invoices = _invoiceService.GetInvoicesByDateRange(fromDate, toDate);
+
+                if (!string.IsNullOrEmpty(searchText))
+                {
+                    if (int.TryParse(searchText, out int invoiceId))
+                    {
+                        invoices = invoices.Where(i => i.InvoiceId == invoiceId).ToList();
+                    }
+                    else
+                    {
+                        invoices = invoices.Where(i => i.User != null && i.User.FullName.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+                    }
+                }
+
+                dgInvoices.ItemsSource = invoices.OrderByDescending(i => i.InvoiceDate).ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error searching:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void BtnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            txtSearchInvoice.Clear();
+            dpFromDate.SelectedDate = DateTime.Today.AddDays(-60);
+            dpToDate.SelectedDate = DateTime.Today;
+            LoadInvoices();
+            _invoiceDetails.Clear();
+            _selectedInvoice = null;
+            dgInvoices.SelectedItem = null;
+            UpdateSummary();
+        }
+
+        private void UpdateSummary()
+        {
+            if (_selectedInvoice == null)
+            {
+                txtSummarySubtotal.Text = "0 d";
+                txtSummaryVAT.Text = "0 d";
+                txtSummaryDiscount.Text = "0 d";
+                txtSummaryTotal.Text = "0 d";
+                return;
+            }
+
+            decimal subtotal = _invoiceDetails.Sum(d => d.Subtotal);
+            decimal vat = subtotal * 0.1m;
+            decimal discount = _selectedInvoice.Discount;
+            decimal finalAmount = subtotal + vat - discount;
+
+            txtSummarySubtotal.Text = $"{subtotal:N0} d";
+            txtSummaryVAT.Text = $"{vat:N0} d";
+            txtSummaryDiscount.Text = $"{discount:N0} d";
+            txtSummaryTotal.Text = $"{finalAmount:N0} d";
+
+            
+            if (_selectedInvoice != null)
+            {
+                _selectedInvoice.FinalAmount = finalAmount;
+            }
+        }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (_selectedInvoice == null)
+                {
+                    MessageBox.Show("Please select an invoice!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+               
+                decimal subtotal = _invoiceDetails.Sum(d => d.Subtotal);
+                decimal vat = subtotal * 0.1m;
+                decimal discount = _selectedInvoice.Discount;
+                decimal finalAmount = subtotal + vat - discount;
+
+                
+                var sql = @"
+                    UPDATE Invoices 
+                    SET TotalAmount = {0}, 
+                        VAT = {1}, 
+                        Discount = {2}
+                    WHERE InvoiceID = {3}";
+
+                _context.Database.ExecuteSqlRaw(
+                    sql,
+                    subtotal,
+                    vat,
+                    discount,
+                    _selectedInvoice.InvoiceId
+                );
+
+                LoadInvoices();
+
+                MessageBox.Show($"Saved changes successfully!\nNew Total: {finalAmount:N0} d", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error saving data:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void BtnDeleteInvoice_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (_selectedInvoice == null)
+                {
+                    MessageBox.Show("Please select an invoice to delete!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                var result = MessageBox.Show($"Are you sure you want to delete invoice #{_selectedInvoice.InvoiceId}?\n\nThis action cannot be undone!", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    var invoiceToDelete = _context.Invoices.Find(_selectedInvoice.InvoiceId);
+                    if (invoiceToDelete != null)
+                    {
+                        _context.Invoices.Remove(invoiceToDelete);
+                        _context.SaveChanges();
+
+                        LoadInvoices();
+                        _invoiceDetails.Clear();
+                        UpdateSummary();
+
+                        MessageBox.Show("Deleted invoice successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error deleting invoice:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnApplyDiscount_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (_selectedInvoice == null)
+                {
+                    MessageBox.Show("Please select an invoice!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                if (!decimal.TryParse(txtDiscountInput.Text, out decimal discountAmount) || discountAmount < 0)
+                {
+                    MessageBox.Show("Invalid discount amount!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                
+                _selectedInvoice.Discount = discountAmount;
+
+                
+                UpdateSummary();
+
+                MessageBox.Show($"Discount applied: {discountAmount:N0} d", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error applying discount:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\bin\Debug\net9.0\appsettings.json
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\bin\Debug\net9.0\MilkTea.DAL.deps.json
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\bin\Debug\net9.0\MilkTea.DAL.runtimeconfig.json
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\bin\Debug\net9.0\MilkTea.DAL.dll
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\bin\Debug\net9.0\MilkTea.DAL.pdb
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.AssemblyInfo.cs
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.sourcelink.json
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.dll
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\refint\MilkTea.DAL.dll
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.pdb
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\MilkTea.DAL.genruntimeconfig.cache
+C:\Users\Admin\Documents\PRN202\New folder\MilkTea\MilkTea.DAL\obj\Debug\net9.0\ref\MilkTea.DAL.dll
