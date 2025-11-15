@@ -26,7 +26,7 @@ namespace MilkTea.GUI.Views
             _invoiceDetails = new ObservableCollection<InvoiceDetail>();
             lstInvoiceDetails.ItemsSource = _invoiceDetails;
 
-
+            
             dpFromDate.SelectedDate = DateTime.Today.AddDays(-30);
             dpToDate.SelectedDate = DateTime.Today;
 
@@ -44,7 +44,7 @@ namespace MilkTea.GUI.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi tải hóa đơn:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error loading invoices:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -59,7 +59,7 @@ namespace MilkTea.GUI.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi tải sản phẩm:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error loading products:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -74,7 +74,7 @@ namespace MilkTea.GUI.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi tải topping:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error loading toppings:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -85,19 +85,6 @@ namespace MilkTea.GUI.Views
                 _selectedInvoice = invoice;
                 LoadInvoiceDetails(invoice.InvoiceId);
                 UpdateSummary();
-
-                // Set status in ComboBox
-                if (!string.IsNullOrEmpty(invoice.Status))
-                {
-                    foreach (ComboBoxItem item in cmbStatus.Items)
-                    {
-                        if (item.Content.ToString() == invoice.Status)
-                        {
-                            cmbStatus.SelectedItem = item;
-                            break;
-                        }
-                    }
-                }
             }
         }
 
@@ -117,7 +104,7 @@ namespace MilkTea.GUI.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi tải chi tiết hóa đơn:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error loading invoice details:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -127,19 +114,19 @@ namespace MilkTea.GUI.Views
             {
                 if (_selectedInvoice == null)
                 {
-                    MessageBox.Show("Vui lòng chọn một hóa đơn!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Please select an invoice!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
                 if (cmbProducts.SelectedValue == null)
                 {
-                    MessageBox.Show("Vui lòng chọn một sản phẩm!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Please select a product!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
                 if (!int.TryParse(txtQuantity.Text, out int quantity) || quantity <= 0)
                 {
-                    MessageBox.Show("Số lượng không hợp lệ!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Invalid quantity!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
@@ -149,11 +136,11 @@ namespace MilkTea.GUI.Views
                 var product = _context.Products.Find(productId);
                 if (product == null)
                 {
-                    MessageBox.Show("Không tìm thấy sản phẩm!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Product not found!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
-
+                
                 var existingDetail = _context.InvoiceDetails.FirstOrDefault(d =>
                     d.InvoiceId == _selectedInvoice.InvoiceId &&
                     d.ProductId == productId &&
@@ -161,11 +148,11 @@ namespace MilkTea.GUI.Views
 
                 if (existingDetail != null)
                 {
-
+                    
                     existingDetail.Quantity += quantity;
                     _context.SaveChanges();
 
-
+                   
                     var uiDetail = _invoiceDetails.FirstOrDefault(d =>
                         d.InvoiceId == existingDetail.InvoiceId &&
                         d.ProductId == existingDetail.ProductId &&
@@ -176,7 +163,7 @@ namespace MilkTea.GUI.Views
                         uiDetail.Quantity = existingDetail.Quantity;
                     }
 
-                    MessageBox.Show($"Đã cập nhật số lượng cho {product.ProductName} thành {existingDetail.Quantity}", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show($"Updated quantity for {product.ProductName} to {existingDetail.Quantity}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
@@ -195,10 +182,10 @@ namespace MilkTea.GUI.Views
 
                     _invoiceDetails.Add(detail);
 
-                    MessageBox.Show("Đã thêm chi tiết hóa đơn thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Added invoice detail successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
 
-
+               
                 var updatedInvoice = _invoiceService.GetInvoiceById(_selectedInvoice.InvoiceId);
                 if (updatedInvoice != null)
                 {
@@ -219,7 +206,7 @@ namespace MilkTea.GUI.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi thêm chi tiết:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error adding detail:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -229,7 +216,7 @@ namespace MilkTea.GUI.Views
             {
                 if (sender is Button btn && btn.Tag is InvoiceDetail detail)
                 {
-                    var result = MessageBox.Show($"Bạn muốn làm gì:\n\n[Yes] Xóa toàn bộ mục\n[No] Giảm số lượng", "Chọn hành động", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+                    var result = MessageBox.Show($"Do you want to:\n\n[Yes] Delete entire item\n[No] Reduce quantity", "Choose action", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
 
                     if (result == MessageBoxResult.Yes)
                     {
@@ -246,12 +233,12 @@ namespace MilkTea.GUI.Views
 
                             _invoiceDetails.Remove(detail);
 
-                            MessageBox.Show("Đã xóa hoàn toàn chi tiết hóa đơn!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show("Deleted invoice detail completely!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                     }
                     else if (result == MessageBoxResult.No)
                     {
-
+                        
                         var reduceWindow = new QuantityInputWindow(detail.Quantity);
                         if (reduceWindow.ShowDialog() == true)
                         {
@@ -266,22 +253,22 @@ namespace MilkTea.GUI.Views
                             {
                                 if (quantityToReduce >= dbDetail.Quantity)
                                 {
-
+                                    
                                     _context.InvoiceDetails.Remove(dbDetail);
                                     _context.SaveChanges();
                                     _invoiceDetails.Remove(detail);
 
-                                    MessageBox.Show($"Đã xóa mục (giảm {quantityToReduce})!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                                    MessageBox.Show($"Deleted item (reduced by {quantityToReduce})!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                                 }
                                 else
                                 {
-
+                                   
                                     dbDetail.Quantity -= quantityToReduce;
                                     _context.SaveChanges();
 
-
+                                   
                                     detail.Quantity = dbDetail.Quantity;
-                                    MessageBox.Show($"Đã giảm số lượng {quantityToReduce}. Còn lại: {dbDetail.Quantity}", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                                    MessageBox.Show($"Reduced quantity by {quantityToReduce}. Remaining: {dbDetail.Quantity}", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                                 }
                             }
                         }
@@ -290,10 +277,10 @@ namespace MilkTea.GUI.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi sửa đổi chi tiết:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error modifying detail:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-
+            
             if (_selectedInvoice != null)
             {
                 var updatedInvoice = _invoiceService.GetInvoiceById(_selectedInvoice.InvoiceId);
@@ -337,7 +324,7 @@ namespace MilkTea.GUI.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi tìm kiếm:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error searching:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -374,7 +361,7 @@ namespace MilkTea.GUI.Views
             txtSummaryDiscount.Text = $"{discount:N0} d";
             txtSummaryTotal.Text = $"{finalAmount:N0} d";
 
-
+            
             if (_selectedInvoice != null)
             {
                 _selectedInvoice.FinalAmount = finalAmount;
@@ -387,17 +374,17 @@ namespace MilkTea.GUI.Views
             {
                 if (_selectedInvoice == null)
                 {
-                    MessageBox.Show("Vui lòng chọn một hóa đơn!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Please select an invoice!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
-
+               
                 decimal subtotal = _invoiceDetails.Sum(d => d.Subtotal);
                 decimal vat = subtotal * 0.1m;
                 decimal discount = _selectedInvoice.Discount;
                 decimal finalAmount = subtotal + vat - discount;
 
-
+                
                 var sql = @"
                     UPDATE Invoices 
                     SET TotalAmount = {0}, 
@@ -415,11 +402,11 @@ namespace MilkTea.GUI.Views
 
                 LoadInvoices();
 
-                MessageBox.Show($"Đã lưu thay đổi thành công!\nTổng mới: {finalAmount:N0} d", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"Saved changes successfully!\nNew Total: {finalAmount:N0} d", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi lưu dữ liệu:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error saving data:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -429,11 +416,11 @@ namespace MilkTea.GUI.Views
             {
                 if (_selectedInvoice == null)
                 {
-                    MessageBox.Show("Vui lòng chọn một hóa đơn để xóa!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Please select an invoice to delete!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
-                var result = MessageBox.Show($"Bạn có chắc chắn muốn xóa hóa đơn #{_selectedInvoice.InvoiceId}?\n\nHành động này không thể hoàn tác!", "Xác nhận xóa", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                var result = MessageBox.Show($"Are you sure you want to delete invoice #{_selectedInvoice.InvoiceId}?\n\nThis action cannot be undone!", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Warning);
 
                 if (result == MessageBoxResult.Yes)
                 {
@@ -447,13 +434,13 @@ namespace MilkTea.GUI.Views
                         _invoiceDetails.Clear();
                         UpdateSummary();
 
-                        MessageBox.Show("Đã xóa hóa đơn thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                        MessageBox.Show("Deleted invoice successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi xóa hóa đơn:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error deleting invoice:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -468,67 +455,27 @@ namespace MilkTea.GUI.Views
             {
                 if (_selectedInvoice == null)
                 {
-                    MessageBox.Show("Vui lòng chọn một hóa đơn!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Please select an invoice!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
                 if (!decimal.TryParse(txtDiscountInput.Text, out decimal discountAmount) || discountAmount < 0)
                 {
-                    MessageBox.Show("Số tiền giảm giá không hợp lệ!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Invalid discount amount!", "Notification", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
-
+                
                 _selectedInvoice.Discount = discountAmount;
 
-
+                
                 UpdateSummary();
 
-                MessageBox.Show($"Đã áp dụng giảm giá: {discountAmount:N0} d", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show($"Discount applied: {discountAmount:N0} d", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Lỗi khi áp dụng giảm giá:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private void BtnUpdateStatus_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                if (_selectedInvoice == null)
-                {
-                    MessageBox.Show("Vui lòng chọn một hóa đơn!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
-                }
-
-                if (cmbStatus.SelectedItem == null)
-                {
-                    MessageBox.Show("Vui lòng chọn một trạng thái!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
-                }
-
-                string newStatus = (cmbStatus.SelectedItem as ComboBoxItem)?.Content.ToString() ?? "";
-
-                if (string.IsNullOrEmpty(newStatus))
-                {
-                    MessageBox.Show("Trạng thái được chọn không hợp lệ!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
-                }
-
-                // Use raw SQL to update status to avoid trigger conflicts
-                var sql = "UPDATE Invoices SET Status = {0} WHERE InvoiceID = {1}";
-
-                _context.Database.ExecuteSqlRaw(sql, newStatus, _selectedInvoice.InvoiceId);
-
-                // Reload invoices to reflect changes
-                LoadInvoices();
-
-                MessageBox.Show($"Trạng thái đã được cập nhật thành: {newStatus}", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi khi cập nhật trạng thái:\n{ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Error applying discount:\n{ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
