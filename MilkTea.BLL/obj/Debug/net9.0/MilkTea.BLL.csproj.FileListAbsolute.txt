@@ -1,0 +1,16 @@
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\bin\Debug\net9.0\appsettings.json
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.BLL.deps.json
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.BLL.dll
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.BLL.pdb
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.DAL.dll
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\bin\Debug\net9.0\MilkTea.DAL.pdb
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.csproj.AssemblyReference.cache
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.AssemblyInfoInputs.cache
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.AssemblyInfo.cs
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.csproj.CoreCompileInputs.cache
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea..039A4F85.Up2Date
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.dll
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\refint\MilkTea.BLL.dll
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\MilkTea.BLL.pdb
+D:\PRN212-G1-main\MilkTea\MilkTea.BLL\obj\Debug\net9.0\ref\MilkTea.BLL.dll
