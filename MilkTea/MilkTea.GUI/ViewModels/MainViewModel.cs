@@ -186,6 +186,7 @@ namespace MilkTea.GUI.ViewModels
             CartItems.Remove(item);
             UpdateTotals();
         }
+        
         public void AddToppingOnlyToCart(Topping topping, int quantity)
         {
             // Gộp topping cùng loại nếu đã có trong giỏ
@@ -218,6 +219,7 @@ namespace MilkTea.GUI.ViewModels
 
             UpdateTotals();
         }
+        
         public void ClearCart()
         {
             CartItems.Clear();
@@ -250,10 +252,14 @@ namespace MilkTea.GUI.ViewModels
             if (CartItems.Count == 0)
                 throw new InvalidOperationException("Giỏ hàng trống!");
             
+            // Lấy UserId từ CurrentUser
+            int? userId = AppConfig.CurrentUser?.UserId;
+            
             var invoiceId = _invoiceService.CreateInvoice(
                 CartItems.ToList(),
                 AppliedDiscount?.DiscountId,
                 paymentMethod,
+                userId,  // Truyền userId vào
                 qrCodeData
             );
             

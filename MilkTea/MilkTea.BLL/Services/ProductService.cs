@@ -73,5 +73,55 @@ namespace MilkTea.BLL.Services
             using var context = new TeaPOSDbContext();
             return context.Products.Count(p => p.CategoryId == categoryId);
         }
+
+        public bool CreateProduct(Product product)
+        {
+            try
+            {
+                using var context = new TeaPOSDbContext();
+                context.Products.Add(product);
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool UpdateProduct(Product product)
+        {
+            try
+            {
+                using var context = new TeaPOSDbContext();
+                context.Products.Update(product);
+                context.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool DeleteProduct(int productId)
+        {
+            try
+            {
+                using var context = new TeaPOSDbContext();
+                var product = context.Products.Find(productId);
+                if (product != null)
+                {
+                    context.Products.Remove(product);
+                    context.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

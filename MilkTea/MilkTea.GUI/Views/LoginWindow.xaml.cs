@@ -20,7 +20,7 @@ namespace MilkTea.GUI.Views
 
             if (_viewModel.Login())
             {
-                // Open main window
+                
                 var mainWindow = new MainWindow();
                 mainWindow.Show();
                 this.Close();

@@ -3467,23 +3467,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ndpho\\.nuget\\packages\\": {},
+    "C:\\Users\\TUF\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj",
+      "projectUniqueName": "D:\\PRN212-G1-main\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj",
       "projectName": "MilkTea.GUI",
-      "projectPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj",
-      "packagesPath": "C:\\Users\\ndpho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.GUI\\obj\\",
+      "projectPath": "D:\\PRN212-G1-main\\MilkTea\\MilkTea.GUI\\MilkTea.GUI.csproj",
+      "packagesPath": "C:\\Users\\TUF\\.nuget\\packages\\",
+      "outputPath": "D:\\PRN212-G1-main\\MilkTea\\MilkTea.GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ndpho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TUF\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3499,8 +3499,8 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj": {
-              "projectPath": "C:\\Users\\ndpho\\Desktop\\trasua020\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj"
+            "D:\\PRN212-G1-main\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj": {
+              "projectPath": "D:\\PRN212-G1-main\\MilkTea\\MilkTea.BLL\\MilkTea.BLL.csproj"
             }
           }
         }
@@ -3565,7 +3565,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

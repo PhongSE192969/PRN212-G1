@@ -1,0 +1,67 @@
+﻿<Window x:Class="MilkTea.GUI.Views.ToppingDetailDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Chi tiết Topping"
+        Height="380" Width="500"
+        WindowStartupLocation="CenterOwner"
+        Background="#F5F5F5"
+        ResizeMode="NoResize">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Grid.Row="0"
+                   x:Name="txtTitle"
+                   Text="THÊM TOPPING MỚI"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Foreground="#FF6B35"
+                   Margin="0,0,0,20"/>
+
+        <!-- Form Fields -->
+        <Border Grid.Row="1" 
+                Background="White" 
+                CornerRadius="10" 
+                Padding="20">
+            <StackPanel>
+                <!-- Topping Name -->
+                <TextBlock Text="Tên topping:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtToppingName"
+                         Style="{StaticResource ModernTextBox}"
+                         Height="40"
+                         Margin="0,0,0,15"/>
+
+                <!-- Price -->
+                <TextBlock Text="Giá (VNĐ):" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <TextBox x:Name="txtPrice"
+                         Style="{StaticResource ModernTextBox}"
+                         Height="40"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Action Buttons -->
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Right"
+                    Margin="0,20,0,0">
+            <Button Content="💾 Lưu"
+                    Style="{StaticResource ModernButton}"
+                    Background="#4CAF50"
+                    Width="100"
+                    Height="40"
+                    Margin="0,0,10,0"
+                    Click="BtnSave_Click"/>
+            <Button Content="❌ Hủy"
+                    Style="{StaticResource ModernButton}"
+                    Background="#9E9E9E"
+                    Width="100"
+                    Height="40"
+                    Click="BtnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

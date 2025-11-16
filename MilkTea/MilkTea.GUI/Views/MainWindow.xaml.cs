@@ -12,7 +12,7 @@ namespace MilkTea.GUI.Views
     public partial class MainWindow : Window
     {
         private readonly MainViewModel _viewModel;
-
+        private User? _currentUser;
         public MainWindow()
         {
             try
@@ -29,6 +29,8 @@ namespace MilkTea.GUI.Views
                     txtWelcome.Text =
                         $"Xin chào, {AppConfig.CurrentUser.FullName} ({AppConfig.CurrentUser.Role})";
                 }
+
+                ConfigureRoleBasedAccess();
             }
             catch (Exception ex)
             {
@@ -195,6 +197,12 @@ namespace MilkTea.GUI.Views
             reportWindow.Show();
         }
 
+        private void BtnInvoices_Click(object sender, RoutedEventArgs e)
+        {
+            var invoiceDetailWindow = new InvoiceDetailWindow();
+            invoiceDetailWindow.Show();
+        }
+
         private void BtnLogout_Click(object sender, RoutedEventArgs e)
         {
             var result = MessageBox.Show("Bạn có chắc muốn đăng xuất?", "Xác nhận",
@@ -209,15 +217,57 @@ namespace MilkTea.GUI.Views
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-        }
 
         private void BtnDiscount_Click(object sender, RoutedEventArgs e)
         {
             var win = new discountpage();
             win.Owner = this;
             win.ShowDialog();
+        }
+
+        private void BtnProduct_Click(object sender, RoutedEventArgs e)
+        {
+            var productManagementPage = new ProductManagementPage();
+            productManagementPage.Owner = this;
+            productManagementPage.ShowDialog();
+            LoadData();
+        }
+
+        private void CategoryListButton_Click(object sender, RoutedEventArgs e)
+        {
+            var categoryPage = new CategoryPage();
+            categoryPage.Owner = this;
+            categoryPage.ShowDialog();
+            LoadData();
+        }
+        private void ConfigureRoleBasedAccess()
+        {
+            // Chỉ Admin mới có quyền truy cập các chức năng quản lý
+            bool isAdmin = AppConfig.IsAdmin;
+
+            // Cấu hình nút Sản phẩm
+            ProductListButton.IsEnabled = isAdmin;
+            if (!isAdmin)
+            {
+                ProductListButton.Opacity = 0.5;
+                ProductListButton.ToolTip = "Chỉ Admin mới có quyền quản lý sản phẩm";
+            }
+
+            // Cấu hình nút Mã giảm giá
+            DiscountListButton.IsEnabled = isAdmin;
+            if (!isAdmin)
+            {
+                DiscountListButton.Opacity = 0.5;
+                DiscountListButton.ToolTip = "Chỉ Admin mới có quyền quản lý mã giảm giá";
+            }
+
+            // Cấu hình nút Danh mục
+            CategoryListButton.IsEnabled = isAdmin;
+            if (!isAdmin)
+            {
+                CategoryListButton.Opacity = 0.5;
+                CategoryListButton.ToolTip = "Chỉ Admin mới có quyền quản lý danh mục";
+            }
         }
     }
 }

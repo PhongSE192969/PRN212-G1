@@ -129,11 +129,22 @@ namespace MilkTea.GUI.Views
                     return;
                 }
 
-                // Create invoice
+                // Lấy UserId từ CurrentUser
+                int? userId = MilkTea.GUI.Utils.AppConfig.CurrentUser?.UserId;
+
+                if (userId == null)
+                {
+                    MessageBox.Show("Không tìm thấy thông tin người dùng! Vui lòng đăng nhập lại.", "Lỗi",
+                        MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                // Create invoice với userId
                 int invoiceId = _invoiceService.CreateInvoice(
                     _cartItems,
                     _appliedDiscount?.DiscountId,
                     paymentMethod,
+                    userId,  // Truyền userId vào
                     qrData
                 );
 

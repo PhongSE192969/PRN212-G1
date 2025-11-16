@@ -32,6 +32,11 @@
                 <StackPanel Orientation="Horizontal" 
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center">
+                    <Button Content="📊 Hoá Đơn Chi Tiết"
+                            Style="{StaticResource ModernButton}"
+                            Background="#4CAF50"
+                            Margin="0,0,10,0"
+                            Click="BtnInvoices_Click"/>
                     <Button Content="📊 Báo cáo"
                             Style="{StaticResource ModernButton}"
                             Background="#4CAF50"
@@ -341,8 +346,8 @@
                 </Grid>
             </Border>
         </Grid>
-        <Button Content="Sản phẩm" HorizontalAlignment="Left" Height="56" Margin="459,10,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="-0.268,3.229" Background="#8FF4F8"/>
-        <Button Content="Mã giảm giá"
+        <Button x:Name="ProductListButton" Content="Sản phẩm" HorizontalAlignment="Left" Height="56" Margin="459,10,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="-0.268,3.229" Background="#8FF4F8" Click="BtnProduct_Click"/>
+        <Button x:Name="DiscountListButton" Content="Mã giảm giá"
         HorizontalAlignment="Left"
         Height="56"
         Margin="691,10,0,0"
@@ -350,6 +355,6 @@
         Width="168"
         Background="#8FF4F8"
         Click="BtnDiscount_Click"/>
-        <Button Content="Danh mục" HorizontalAlignment="Left" Height="56" Margin="921,10,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="-0.268,3.229" Background="#8FF4F8"/>
+        <Button x:Name="CategoryListButton" Content="Danh mục" HorizontalAlignment="Left" Height="56" Margin="921,10,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="-0.268,3.229" Background="#8FF4F8" Click="CategoryListButton_Click"/>
     </Grid>
 </Window>

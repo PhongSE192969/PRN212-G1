@@ -2,13 +2,12 @@ using MilkTea.BLL;
 using Microsoft.EntityFrameworkCore;
 using MilkTea.DAL.Data;
 using MilkTea.DAL.Models;
-// using MilkTea.GUI.Utils; // Will be added later
 
 namespace MilkTea.BLL.Services
 {
     public class InvoiceService
     {
-        public int CreateInvoice(List<CartItem> cartItems, int? discountId, string paymentMethod, string? qrCodeData = null)
+        public int CreateInvoice(List<CartItem> cartItems, int? discountId, string paymentMethod, int? userId, string? qrCodeData = null)
         {
             if (cartItems == null || cartItems.Count == 0)
             {
@@ -39,7 +38,7 @@ namespace MilkTea.BLL.Services
                 var invoice = new Invoice
                 {
                     InvoiceDate = DateTime.Now,
-                    UserId = AppConfig.CurrentUser?.UserId,
+                    UserId = userId,  // Sử dụng userId được truyền vào
                     TotalAmount = totalAmount,
                     VAT = vat,
                     Discount = discountAmount,
